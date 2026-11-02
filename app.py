@@ -83,7 +83,7 @@ def create_app(overrides=None, claude=None, base_dir=BASE_DIR):
         claude = ClaudeClient(cfg.API_KEY, cfg.TIMEOUT_SECONDS)
     _setup_logging(cfg, base_dir)
 
-    chars_dir = os.path.join(base_dir, "characters")
+    chars_dir = os.path.join(base_dir, cfg.CHARACTERS_DIR)
     data_dir = os.path.join(base_dir, cfg.DATA_DIR)
     limiter = HourlyLimiter(cfg.MAX_CALLS_PER_HOUR)
     characters, characters_lock = {}, threading.Lock()

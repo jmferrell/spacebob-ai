@@ -21,6 +21,7 @@ DEFAULTS = {
     "HOST": "127.0.0.1",         # use "0.0.0.0" only if the MUSH is on another machine
     "PORT": 5000,
     "DATA_DIR": "data",          # notes are stored here (relative to the project folder)
+    "CHARACTERS_DIR": "characters",  # folder of character briefs; relative to the project folder, or an absolute path
     "LOG_FILE": "logs/mushai.log",  # None = log to the console only
 }
 
