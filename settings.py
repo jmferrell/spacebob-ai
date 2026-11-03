@@ -19,7 +19,7 @@ DEFAULTS = {
     "MAX_CALLS_PER_HOUR": 300,   # overall cap on Claude calls (0 = unlimited)
     "ASCII_ONLY": True,          # transliterate replies to plain ASCII for the MUSH
     "HOST": "127.0.0.1",         # use "0.0.0.0" only if the MUSH is on another machine
-    "PORT": 5000,
+    "PORT": 5001,
     "DATA_DIR": "data",          # notes are stored here (relative to the project folder)
     "CHARACTERS_DIR": "characters",  # folder of character briefs; relative to the project folder, or an absolute path
     "LOG_FILE": "logs/mushai.log",  # None = log to the console only
